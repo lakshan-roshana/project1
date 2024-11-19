@@ -46,15 +46,3 @@
   color: white;
   max-width: 600px;
 }
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      text-align: center; /* Center content for smaller screens */
-  }
-  .intro-text {
-      padding-left: 0;
-      margin-top: 20px;
-  }
-}
-
-
