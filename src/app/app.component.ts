@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { TexttestComponent } from './texttest/texttest.component';
 
 
 @Component({
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    TexttestComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

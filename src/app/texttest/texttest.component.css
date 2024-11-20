@@ -1,0 +1,142 @@
+/* Overall container styles */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #374151; /* Tailwind Slate 800 */
+  color: #ffffff; /* White text */
+  padding: 50px 20px;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+/* Profile Image Section */
+.profile-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  border: 5px solid #14b8a6;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  animation: float 3s infinite ease-in-out;
+
+  /* Hover effects */
+  &:hover {
+    transform: scale(1.1);
+    border-color: #14b8a6; /* Tailwind Teal 500 */
+    border: 5px solid #1f2937; /* Tailwind Slate 900 */ 
+  }
+}
+
+/* Hero Text Section */
+.hero-text {
+  flex: 2;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  animation: slideIn 1s ease-out;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+
+.hero-description2{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+
+/* Floating animation for the profile image */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in animation for the text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-in animation for the heading */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 20px;
+  }
+}
+
+
+.typing-effect {
+  display: inline-block;
+  
+  color: #14b8a6; 
+  font-size: 1.5rem;
+  /* Added: Prevent line breaks */
+  white-space: nowrap;
+  font-weight: bolder;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0%, 50% {
+    width: 0;
+  }
+  50%, 100% {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #14b8a6;
+  }
+}
+
+
