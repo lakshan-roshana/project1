@@ -1,0 +1,48 @@
+/* Home Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightslategrey;
+  padding: 20px; /* Adds some padding for spacing */
+}
+
+/* Profile and Intro Container */
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+  flex: 1;
+  text-align: center; /* Centers the photo if it's smaller */
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Intro Text Styling */
+.intro-text {
+  flex: 2;
+  padding-left: 20px; /* Adds space between the image and text */
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 600px;
+}

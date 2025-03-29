@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+/* Light Theme (default) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --navbar-bg-color: #333;
+    --link-color: #ffffff;
+  }
+  
+  /* Dark Theme */
+  [data-theme="dark"] {
+    --bg-color: #181818;
+    --text-color: #ffffff;
+    --navbar-bg-color: #222;
+    --link-color: #ff9800;
+  }
+  
+  /* Apply these variables globally */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    background-color: var(--navbar-bg-color);
+  }
+  
+  .navbar a {
+    color: var(--link-color);
+  }
+  
